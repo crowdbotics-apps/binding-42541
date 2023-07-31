@@ -1,5 +1,5 @@
+import { advertisementadbutler_post_publishers_create } from "../../store/advertisementAdButler/advertisementadbutler_response_post_CreatePublishers.slice.js";
 import { Text } from "react-native";
-import { jotformsapiintegration_post_register_create } from "../../store/jotformsAPIIntegration/jotformsapiintegration_response_post_CreateOrSignupUsers.slice.js";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { Pressable } from "react-native";
@@ -10,30 +10,22 @@ import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled4 = () => {
   const {
-    entities: username
-  } = useSelector(state => state.username);
-  const {
-    entities: email
-  } = useSelector(state => state.email);
+    entities: name
+  } = useSelector(state => state.name);
   const dispatch = useDispatch();
-  const {
-    entities: password
-  } = useSelector(state => state.password);
-  const [localPassword, setLocalPassword] = useState(password.password);
+  const [localName, setLocalName] = useState(name.name);
 
   const onSubmit = () => {
-    dispatch(jotformsapiintegration_post_register_create({}));
+    dispatch(advertisementadbutler_post_publishers_create({}));
   };
 
-  const [localEmail, setLocalEmail] = useState(email.email);
-  const [localUsername, setLocalUsername] = useState(username.username);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
       padding: 10,
       position: 'relative',
       flex: 1
-    }}><Pressable onPress={onSubmit}><View style={styles.WRByvgbG}><Text style={styles.yLGDNLWm}>{"SUBMIT"}</Text></View></Pressable><TextInput style={styles.HuZrdYDs} value={localPassword}></TextInput><TextInput style={styles.uFSXDYQB} value={localEmail}></TextInput><TextInput style={styles.raqNlAma} value={localUsername}></TextInput></ScrollView>
+    }}><Pressable onPress={onSubmit}><View style={styles.WRByvgbG}><Text style={styles.yLGDNLWm}>{"SUBMIT"}</Text></View></Pressable><TextInput style={styles.YOHDkZqw} value={localName}></TextInput></ScrollView>
     </SafeAreaView>;
 };
 
@@ -51,12 +43,6 @@ const styles = StyleSheet.create({
     top: 89,
     left: 8
   },
-  HuZrdYDs: {
-    backgroundColor: "#ffffff",
-    borderColor: "#cccccc",
-    width: 150,
-    height: 30
-  },
   yLGDNLWm: {
     width: 79,
     height: 18,
@@ -68,13 +54,7 @@ const styles = StyleSheet.create({
     top: 21,
     left: 28
   },
-  uFSXDYQB: {
-    backgroundColor: "#ffffff",
-    borderColor: "#cccccc",
-    width: 150,
-    height: 30
-  },
-  raqNlAma: {
+  YOHDkZqw: {
     backgroundColor: "#ffffff",
     borderColor: "#cccccc",
     width: 150,
