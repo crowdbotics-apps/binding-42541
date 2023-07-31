@@ -1,26 +1,26 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
 import { apiService } from "./api"
-export const jotformsintegration_get_reports_read = createAsyncThunk(
-  "jotformsintegration_response_get_GetUserReports/jotformsintegration_get_reports_read",
+export const jotformsapiintegration_get_reports_read = createAsyncThunk(
+  "jotformsapiintegration_response_get_GetUserReports/jotformsapiintegration_get_reports_read",
   async payload => {
-    const response = await apiService.jotformsintegration_get_reports_read(
+    const response = await apiService.jotformsapiintegration_get_reports_read(
       payload
     )
     return response.data
   }
 )
 const initialState = { entities: [], api: { loading: "idle", error: null } }
-const jotformsintegration_response_get_GetUserReportsSlice = createSlice({
-  name: "jotformsintegration_response_get_GetUserReports",
+const jotformsapiintegration_response_get_GetUserReportsSlice = createSlice({
+  name: "jotformsapiintegration_response_get_GetUserReports",
   initialState,
   reducers: {},
   extraReducers: {
-    [jotformsintegration_get_reports_read.pending]: (state, action) => {
+    [jotformsapiintegration_get_reports_read.pending]: (state, action) => {
       if (state.api.loading === "idle") {
         state.api.loading = "pending"
       }
     },
-    [jotformsintegration_get_reports_read.fulfilled]: (state, action) => {
+    [jotformsapiintegration_get_reports_read.fulfilled]: (state, action) => {
       if (state.api.loading === "pending") {
         state.entities = [
           ...state.entities.filter(record => record.id !== action.payload.id),
@@ -29,7 +29,7 @@ const jotformsintegration_response_get_GetUserReportsSlice = createSlice({
         state.api.loading = "idle"
       }
     },
-    [jotformsintegration_get_reports_read.rejected]: (state, action) => {
+    [jotformsapiintegration_get_reports_read.rejected]: (state, action) => {
       if (state.api.loading === "pending") {
         state.api.error = action.error
         state.api.loading = "idle"
@@ -38,6 +38,6 @@ const jotformsintegration_response_get_GetUserReportsSlice = createSlice({
   }
 })
 export default {
-  jotformsintegration_get_reports_read,
-  slice: jotformsintegration_response_get_GetUserReportsSlice
+  jotformsapiintegration_get_reports_read,
+  slice: jotformsapiintegration_response_get_GetUserReportsSlice
 }
