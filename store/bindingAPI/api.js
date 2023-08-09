@@ -9,6 +9,24 @@ function api_docs_schema_retrieve(payload) {
 function api_v1_login_create(payload) {
   return bindingAPI.post(`/api/v1/login/`, payload.data)
 }
+function api_v1_profile_list(payload) {
+  return bindingAPI.get(`/api/v1/profile/`)
+}
+function api_v1_profile_create(payload) {
+  return bindingAPI.post(`/api/v1/profile/`, payload.data)
+}
+function api_v1_profile_retrieve(payload) {
+  return bindingAPI.get(`/api/v1/profile/${payload.id}/`)
+}
+function api_v1_profile_update(payload) {
+  return bindingAPI.put(`/api/v1/profile/${payload.id}/`, payload.data)
+}
+function api_v1_profile_partial_update(payload) {
+  return bindingAPI.patch(`/api/v1/profile/${payload.id}/`, payload.data)
+}
+function api_v1_profile_destroy(payload) {
+  return bindingAPI.delete(`/api/v1/profile/${payload.id}/`)
+}
 function api_v1_signup_create(payload) {
   return bindingAPI.post(`/api/v1/signup/`, payload.data)
 }
@@ -48,6 +66,12 @@ function rest_auth_user_partial_update(payload) {
 export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
+  api_v1_profile_list,
+  api_v1_profile_create,
+  api_v1_profile_retrieve,
+  api_v1_profile_update,
+  api_v1_profile_partial_update,
+  api_v1_profile_destroy,
   api_v1_signup_create,
   rest_auth_login_create,
   rest_auth_logout_retrieve,
