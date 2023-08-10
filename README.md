@@ -78,6 +78,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-privacy-policy-webview](modules/privacy-policy-webview)
 - [react-native-social-login](modules/social-login)
 - [react-native-appointment](modules/appointment)
+- [react-native-chat](modules/chat)
 
 # Getting started: Frontend
 
