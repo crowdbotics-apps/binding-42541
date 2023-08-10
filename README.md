@@ -61,6 +61,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-login](modules/login)
 - [react-native-articles](modules/articles)
 - [react-native-fingerprint-authentication](modules/fingerprint-authentication)
+- [react-native-contact-us](modules/contact-us)
 
 # Getting started: Frontend
 
