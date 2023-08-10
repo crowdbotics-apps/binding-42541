@@ -21,6 +21,7 @@
     "@modules/login": "file:./modules/login/",
     "@modules/maps": "file:./modules/maps/",
     "@modules/navigation-tabs": "file:./modules/navigation-tabs/",
+    "@modules/onboarding": "file:./modules/onboarding/",
     "@modules/qr-code": "file:./modules/qr-code/",
     "@modules/signature": "file:./modules/signature/",
     "@modules/user-profile": "file:./modules/user-profile/",
