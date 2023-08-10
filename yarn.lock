@@ -1483,6 +1483,13 @@
 "@modules/fingerprint-authentication@file:./modules/fingerprint-authentication":
   version "1.0.0"
 
+"@modules/live-camera-filters@file:./modules/live-camera-filters/":
+  version "1.0.0"
+  dependencies:
+    "@react-native-community/cameraroll" "^4.1.2"
+    react-native-filter-camera "0.1.18"
+    react-native-vector-icons "^9.2.0"
+
 "@modules/login@file:./modules/login":
   version "1.0.0"
   dependencies:
@@ -1500,7 +1507,7 @@
 "@modules/signature@file:./modules/signature":
   version "1.0.0"
 
-"@modules/typeform-webhook@file:./modules/typeform-webhook/":
+"@modules/typeform-webhook@file:./modules/typeform-webhook":
   version "1.0.0"
   dependencies:
     "@react-navigation/native" "6.0.8"
@@ -1556,6 +1563,11 @@
   integrity sha512-5QXuGCtB+HL3VtKL2JN3+6t4qh8VXizK+aGDAv6Dqiq3MLrzgZHb4tjVgtEWMd8CcDtD/JqaAI1b6/EaYGtFIA==
   dependencies:
     merge-options "^3.0.4"
+
+"@react-native-community/cameraroll@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cameraroll/-/cameraroll-4.1.2.tgz#489c6bb6137571540d93c543d5fcf8c652b548ec"
+  integrity sha512-jkdhMByMKD2CZ/5MPeBieYn8vkCfC4MOTouPpBpps3I8N6HUYJk+1JnDdktVYl2WINnqXpQptDA2YptVyifYAg==
 
 "@react-native-community/cli-clean@^10.1.1":
   version "10.1.1"
@@ -7521,6 +7533,11 @@ react-native-elements@^3.4.3:
     opencollective-postinstall "^2.0.3"
     react-native-ratings "8.0.4"
     react-native-size-matters "^0.3.1"
+
+react-native-filter-camera@0.1.18:
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/react-native-filter-camera/-/react-native-filter-camera-0.1.18.tgz#0d78f43df31dbb7790168ac7690f8ea21f26cb06"
+  integrity sha512-AlMisBq4ZihoBqQRwkMSB+RtZ7Qdq75aw7tGdAMIKvsyl2sOX8t22UxDf07QeKqqJJ0J1PUk6NXs06eo/JGJkQ==
 
 react-native-fingerprint-scanner@6.0.0:
   version "6.0.0"
