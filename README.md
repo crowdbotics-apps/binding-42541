@@ -66,7 +66,6 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-signature](modules/signature)
 - [react-native-qr-code](modules/qr-code)
 - [react-native-2fa](modules/2fa)
-- [react-native-typeform-webhook](modules/typeform-webhook)
 
 # Getting started: Frontend
 

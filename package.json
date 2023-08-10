@@ -21,7 +21,6 @@
     "@modules/login": "file:./modules/login/",
     "@modules/qr-code": "file:./modules/qr-code/",
     "@modules/signature": "file:./modules/signature/",
-    "@modules/typeform-webhook": "file:./modules/typeform-webhook/",
     "@modules/user-profile": "file:./modules/user-profile/",
     "@react-native-async-storage/async-storage": "1.17.9",
     "@react-native-community/cameraroll": "^4.1.2",
