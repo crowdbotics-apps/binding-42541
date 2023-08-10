@@ -2951,6 +2951,9 @@
 "@modules/photo-editing@file:./modules/photo-editing":
   version "1.0.0"
 
+"@modules/privacy-policy-webview@file:./modules/privacy-policy-webview/":
+  version "1.0.0"
+
 "@modules/qr-code@file:./modules/qr-code":
   version "1.0.0"
   dependencies:
@@ -2963,7 +2966,7 @@
 "@modules/splash@file:./modules/splash":
   version "1.0.0"
 
-"@modules/terms-and-conditions-webview@file:./modules/terms-and-conditions-webview/":
+"@modules/terms-and-conditions-webview@file:./modules/terms-and-conditions-webview":
   version "1.0.0"
 
 "@modules/user-profile@file:./modules/user-profile":
