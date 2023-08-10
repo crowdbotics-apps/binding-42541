@@ -79,6 +79,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-social-login](modules/social-login)
 - [react-native-appointment](modules/appointment)
 - [react-native-chat](modules/chat)
+- [react-native-google-analytics](modules/google-analytics)
 
 # Getting started: Frontend
 

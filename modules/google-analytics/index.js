@@ -1,13 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Text, View, ScrollView, Switch, TouchableOpacity } from "react-native"; // @ts-ignore
-
+import { Text, View, ScrollView, Switch, TouchableOpacity } from "react-native";
+// @ts-ignore
 import { OptionsContext } from "@options";
 
 const App = () => {
   const options = useContext(OptionsContext);
   const {
-    styles,
-    setAnalyticsCollectionEnabled,
+    styles, setAnalyticsCollectionEnabled,
     getAppInstanceId,
     logBeginCheckout,
     logAddPaymentInfo,
@@ -51,6 +50,7 @@ const App = () => {
     setUserId,
     setUserProperties
   } = options;
+
   const [appId, setAppId] = useState("");
   const [isEnabled, setIsEnabled] = useState(true);
 
@@ -65,20 +65,20 @@ const App = () => {
       const appInstanceId = await getAppInstanceId();
       setAppId(appInstanceId);
     };
-
     appId();
   }, []);
 
   const handlelogLogin = async () => {
     await logLogin({
       method: "facebook.com"
-    }).catch(err => console.log("error: ", err));
+
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSignUp = async () => {
     await logSignUp({
       method: "email"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogAddToCart = async () => {
@@ -86,7 +86,7 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogAddToWishlist = async () => {
@@ -94,7 +94,7 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogAddShippingInfo = async () => {
@@ -104,7 +104,7 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogCampaignDetails = async () => {
@@ -116,27 +116,27 @@ const App = () => {
       medium: "email",
       source: "newsletter",
       term: "abcd"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogEarnVirtualCurrency = async () => {
     await logEarnVirtualCurrency({
       virtual_currency_name: "usd",
       value: 3
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogGenerateLead = async () => {
     await logGenerateLead({
       currency: "usd",
       value: 2
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogJoinGroup = async () => {
     await logJoinGroup({
       group_id: "1234567"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogEvent = async () => {
@@ -145,35 +145,34 @@ const App = () => {
       item: "mens grey t-shirt",
       description: ["round neck", "long sleeved"],
       size: "L"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogLevelEnd = async () => {
     await logLevelEnd({
       level: 2,
       success: "abcd"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogLevelStart = async () => {
     await logLevelStart({
       level: 2
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogLevelUp = async () => {
     await logLevelUp({
       character: "ninja",
       level: 2
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
-
   const handlelogPostScore = async () => {
     await logPostScore({
       character: "ninja",
       level: 2,
       score: 60
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogPurchase = async () => {
@@ -186,7 +185,7 @@ const App = () => {
       shipping: 2,
       transaction_id: "trans_1234567",
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogRemoveFromCart = async () => {
@@ -194,14 +193,14 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 32
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogScreenView = async () => {
     await logScreenView({
       screen_class: "gentsLogs",
       screen_name: "Gents t-shirts"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogRefund = async () => {
@@ -214,7 +213,7 @@ const App = () => {
       shipping: 2,
       transaction_id: "df24234",
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSearch = async () => {
@@ -228,14 +227,14 @@ const App = () => {
       search_term: "df24234",
       start_date: "2022-02-03",
       travel_class: "business"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSelectContent = async () => {
     await logSelectContent({
       content_type: "shirts",
       item_id: "abcd6568"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSelectItem = async () => {
@@ -244,7 +243,7 @@ const App = () => {
       item_list_id: "abcd6568",
       item_list_name: "gents_shirt",
       items: []
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSelectPromotion = async () => {
@@ -255,9 +254,8 @@ const App = () => {
       location_id: "nef24234",
       promotion_id: "df24234",
       promotion_name: "travel_class"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
-
   const handlelogAddPaymentInfo = async () => {
     await logAddPaymentInfo({
       payment_type: "clothing",
@@ -265,17 +263,17 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlesetUserId = async () => {
-    await setUserId("user_1234567").catch(err => console.log("error: ", err));
+    await setUserId("user_1234567").catch((err) => console.log("error: ", err));
   };
 
   const handlelogUnlockAchievement = async () => {
     await logUnlockAchievement({
       achievement_id: "ac_32432432"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogViewCart = async () => {
@@ -283,7 +281,7 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 32
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogViewItem = async () => {
@@ -291,7 +289,7 @@ const App = () => {
       currency: "aud",
       value: 2,
       items: []
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogViewItemList = async () => {
@@ -299,7 +297,7 @@ const App = () => {
       item_list_id: "gs_fdf242345",
       item_list_name: "gents_shirt",
       items: []
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogViewPromotion = async () => {
@@ -310,7 +308,7 @@ const App = () => {
       location_id: "nef24234",
       promotion_id: "df24234",
       promotion_name: "travel_class"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogBeginCheckout = async () => {
@@ -319,13 +317,13 @@ const App = () => {
       currency: "usd",
       items: [],
       value: 1
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogViewSearchResults = async () => {
     await logViewSearchResults({
       search_term: "sleeves"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlelogShare = async () => {
@@ -333,22 +331,22 @@ const App = () => {
       content_type: "clothing",
       item_id: "abcd",
       method: "facebook"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlesetUserProperty = async () => {
-    await setUserProperty("name", "john").catch(err => console.log("error: ", err));
+    await setUserProperty("name", "john").catch((err) => console.log("error: ", err));
   };
 
   const handlesetUserProperties = async () => {
     await setUserProperties({
       name: "john",
       value: "68568"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlesetSessionTimeoutDuration = async () => {
-    await setSessionTimeoutDuration(5000).catch(err => console.log("error: ", err));
+    await setSessionTimeoutDuration(5000).catch((err) => console.log("error: ", err));
   };
 
   const handlelogSpendVirtualCurrency = async () => {
@@ -356,23 +354,27 @@ const App = () => {
       item_name: "T-Shirt",
       value: 56,
       virtual_currency_name: "usd"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
   const handlesetDefaultEventParameters = async () => {
     await setDefaultEventParameters({
       event_name: "search"
-    }).catch(err => console.log("error: ", err));
+    }).catch((err) => console.log("error: ", err));
   };
 
-  return <View style={styles.container}>
+  return (
+    <View style={styles.container}>
       <ScrollView>
         <View style={styles.trackingContainer}>
           <Text>Enable Tracking</Text>
-          <Switch trackColor={{
-          false: "#767577",
-          true: "#a5b0ff"
-        }} thumbColor={isEnabled ? "#1549b2" : "#f4f3f4"} onValueChange={trackingToggle} value={isEnabled} style={styles.switch} />
+          <Switch
+            trackColor={{ false: "#767577", true: "#a5b0ff" }}
+            thumbColor={isEnabled ? "#1549b2" : "#f4f3f4"}
+            onValueChange={trackingToggle}
+            value={isEnabled}
+            style={styles.switch}
+          />
         </View>
         <View style={styles.appIdContainer}>
           <Text style={styles.appIdHeading}>AppID:</Text>
@@ -546,7 +548,8 @@ const App = () => {
           </View>
         </View>
       </ScrollView>
-    </View>;
+    </View>
+  );
 };
 
 export default {
