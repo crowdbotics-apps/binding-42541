@@ -18,7 +18,6 @@
     "@modules/articles": "file:./modules/articles/",
     "@modules/contact-us": "file:./modules/contact-us/",
     "@modules/fingerprint-authentication": "file:./modules/fingerprint-authentication/",
-    "@modules/live-camera-filters": "file:./modules/live-camera-filters/",
     "@modules/login": "file:./modules/login/",
     "@modules/qr-code": "file:./modules/qr-code/",
     "@modules/signature": "file:./modules/signature/",

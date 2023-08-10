@@ -67,7 +67,6 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-qr-code](modules/qr-code)
 - [react-native-2fa](modules/2fa)
 - [react-native-typeform-webhook](modules/typeform-webhook)
-- [react-native-live-camera-filters](modules/live-camera-filters)
 
 # Getting started: Frontend
 
