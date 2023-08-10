@@ -67,6 +67,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-qr-code](modules/qr-code)
 - [react-native-2fa](modules/2fa)
 - [react-native-navigation-tabs](modules/navigation-tabs)
+- [react-native-maps](modules/maps)
 
 # Getting started: Frontend
 
