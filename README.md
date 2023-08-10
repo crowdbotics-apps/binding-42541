@@ -69,6 +69,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-navigation-tabs](modules/navigation-tabs)
 - [react-native-maps](modules/maps)
 - [react-native-onboarding](modules/onboarding)
+- [react-native-photo-editing](modules/photo-editing)
 
 # Getting started: Frontend
 
