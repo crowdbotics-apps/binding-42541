@@ -76,6 +76,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-zoom-free-calling](modules/zoom-free-calling)
 - [react-native-terms-and-conditions-webview](modules/terms-and-conditions-webview)
 - [react-native-privacy-policy-webview](modules/privacy-policy-webview)
+- [react-native-social-login](modules/social-login)
 
 # Getting started: Frontend
 

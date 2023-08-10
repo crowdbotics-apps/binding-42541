@@ -26,6 +26,7 @@
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
     "@modules/qr-code": "file:./modules/qr-code/",
     "@modules/signature": "file:./modules/signature/",
+    "@modules/social-login": "file:./modules/social-login/",
     "@modules/splash": "file:./modules/splash/",
     "@modules/terms-and-conditions-webview": "file:./modules/terms-and-conditions-webview/",
     "@modules/user-profile": "file:./modules/user-profile/",
