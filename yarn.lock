@@ -3011,10 +3011,13 @@
     "@react-navigation/native-stack" "6.5.0"
     react-native-screens "3.10.2"
 
+"@modules/faq@file:./modules/faq":
+  version "1.0.0"
+
 "@modules/fingerprint-authentication@file:./modules/fingerprint-authentication":
   version "1.0.0"
 
-"@modules/google-analytics@file:./modules/google-analytics/":
+"@modules/google-analytics@file:./modules/google-analytics":
   version "1.0.0"
 
 "@modules/login@file:./modules/login":
