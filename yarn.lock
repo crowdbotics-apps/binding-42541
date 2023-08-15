@@ -3014,9 +3014,6 @@
 "@modules/faq@file:./modules/faq":
   version "1.0.0"
 
-"@modules/fingerprint-authentication@file:./modules/fingerprint-authentication":
-  version "1.0.0"
-
 "@modules/google-analytics@file:./modules/google-analytics":
   version "1.0.0"
 

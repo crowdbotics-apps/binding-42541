@@ -60,7 +60,6 @@ This react_native application was built with Crowdbotics www.crowdbotics.com
 This section will show any installed modules you add from the Storyboard Modules section.
 - [react-native-login](modules/login)
 - [react-native-articles](modules/articles)
-- [react-native-fingerprint-authentication](modules/fingerprint-authentication)
 - [react-native-contact-us](modules/contact-us)
 - [react-native-signature](modules/signature)
 - [react-native-qr-code](modules/qr-code)
