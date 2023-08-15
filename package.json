@@ -21,7 +21,6 @@
     "@modules/faq": "file:./modules/faq",
     "@modules/google-analytics": "file:./modules/google-analytics/",
     "@modules/onboarding": "file:./modules/onboarding/",
-    "@modules/photo-editing": "file:./modules/photo-editing/",
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
     "@modules/social-login": "file:./modules/social-login/",
     "@modules/splash": "file:./modules/splash/",
