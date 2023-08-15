@@ -2987,9 +2987,6 @@
     react-native-dropdown-picker "5.3.0"
     react-native-screens "3.10.2"
 
-"@modules/articles@file:./modules/articles":
-  version "1.0.0"
-
 "@modules/chat@file:./modules/chat":
   version "1.1.0"
   dependencies:

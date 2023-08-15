@@ -16,7 +16,6 @@
     "@babel/polyfill": "^7.12.1",
     "@modules/2fa": "file:./modules/2fa/",
     "@modules/appointment": "file:./modules/appointment/",
-    "@modules/articles": "file:./modules/articles/",
     "@modules/chat": "file:./modules/chat/",
     "@modules/contact-us": "file:./modules/contact-us/",
     "@modules/faq": "file:./modules/faq",
