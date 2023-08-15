@@ -3043,12 +3043,6 @@
 "@modules/privacy-policy-webview@file:./modules/privacy-policy-webview":
   version "1.0.0"
 
-"@modules/qr-code@file:./modules/qr-code":
-  version "1.0.0"
-  dependencies:
-    react-native-camera "4.2.1"
-    react-native-qrcode-scanner "1.5.5"
-
 "@modules/signature@file:./modules/signature":
   version "1.0.0"
 
