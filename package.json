@@ -21,7 +21,6 @@
     "@modules/faq": "file:./modules/faq",
     "@modules/google-analytics": "file:./modules/google-analytics/",
     "@modules/login": "file:./modules/login/",
-    "@modules/maps": "file:./modules/maps/",
     "@modules/navigation-tabs": "file:./modules/navigation-tabs/",
     "@modules/onboarding": "file:./modules/onboarding/",
     "@modules/photo-editing": "file:./modules/photo-editing/",
