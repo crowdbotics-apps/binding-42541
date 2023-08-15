@@ -3043,9 +3043,6 @@
 "@modules/privacy-policy-webview@file:./modules/privacy-policy-webview":
   version "1.0.0"
 
-"@modules/signature@file:./modules/signature":
-  version "1.0.0"
-
 "@modules/social-login@file:./modules/social-login":
   version "1.0.0"
   dependencies:

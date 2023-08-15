@@ -61,7 +61,6 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-login](modules/login)
 - [react-native-articles](modules/articles)
 - [react-native-contact-us](modules/contact-us)
-- [react-native-signature](modules/signature)
 - [react-native-2fa](modules/2fa)
 - [react-native-navigation-tabs](modules/navigation-tabs)
 - [react-native-maps](modules/maps)
