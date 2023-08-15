@@ -3014,9 +3014,6 @@
 "@modules/google-analytics@file:./modules/google-analytics":
   version "1.0.0"
 
-"@modules/navigation-tabs@file:./modules/navigation-tabs":
-  version "1.0.0"
-
 "@modules/onboarding@file:./modules/onboarding":
   version "1.0.0"
   dependencies:

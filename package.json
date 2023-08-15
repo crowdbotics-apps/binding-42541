@@ -20,7 +20,6 @@
     "@modules/contact-us": "file:./modules/contact-us/",
     "@modules/faq": "file:./modules/faq",
     "@modules/google-analytics": "file:./modules/google-analytics/",
-    "@modules/navigation-tabs": "file:./modules/navigation-tabs/",
     "@modules/onboarding": "file:./modules/onboarding/",
     "@modules/photo-editing": "file:./modules/photo-editing/",
     "@modules/privacy-policy-webview": "file:./modules/privacy-policy-webview/",
