@@ -9,7 +9,7 @@ const advertisementAdButler = axios.create({
   }
 })
 function advertisementadbutler_post_publishers_create(payload) {
-  return advertisementAdButler.post(`/publishers`, payload.data)
+  return advertisementAdButler.post(`/publishers`, payload)
 }
 function advertisementadbutler_get_publishers_publisherid_read(payload) {
   return advertisementAdButler.get(`/publishers/${payload.publisher - id}`)

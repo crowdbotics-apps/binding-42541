@@ -15,35 +15,36 @@ const advertisementadbutler_response_delete_DeletePublishersSlice = createSlice(
     name: "advertisementadbutler_response_delete_DeletePublishers",
     initialState,
     reducers: {},
-    extraReducers: {
-      [advertisementadbutler_delete_publishers_publisherid_delete.pending]: (
-        state,
-        action
-      ) => {
-        if (state.api.loading === "idle") {
-          state.api.loading = "pending"
-        }
-      },
-      [advertisementadbutler_delete_publishers_publisherid_delete.fulfilled]: (
-        state,
-        action
-      ) => {
-        if (state.api.loading === "pending") {
-          state.entities = state.entities.filter(
-            record => record.id !== action.meta.arg?.id
-          )
-          state.api.loading = "idle"
-        }
-      },
-      [advertisementadbutler_delete_publishers_publisherid_delete.rejected]: (
-        state,
-        action
-      ) => {
-        if (state.api.loading === "pending") {
-          state.api.error = action.error
-          state.api.loading = "idle"
-        }
-      }
+    extraReducers: builder => {
+      builder
+        .addCase(
+          advertisementadbutler_delete_publishers_publisherid_delete.pending,
+          (state, action) => {
+            if (state.api.loading === "idle") {
+              state.api.loading = "pending"
+            }
+          }
+        )
+        .addCase(
+          advertisementadbutler_delete_publishers_publisherid_delete.fulfilled,
+          (state, action) => {
+            if (state.api.loading === "pending") {
+              state.entities = state.entities.filter(
+                record => record.id !== action.meta.arg?.id
+              )
+              state.api.loading = "idle"
+            }
+          }
+        )
+        .addCase(
+          advertisementadbutler_delete_publishers_publisherid_delete.rejected,
+          (state, action) => {
+            if (state.api.loading === "pending") {
+              state.api.error = action.error
+              state.api.loading = "idle"
+            }
+          }
+        )
     }
   }
 )
